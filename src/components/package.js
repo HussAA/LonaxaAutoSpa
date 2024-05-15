@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import Checkmark from "../images/checkmark.png";
+import { TawkContext } from "../providers";
 const PackageTitle = styled.div`
   font-size: 12pt;
   color: white;
@@ -33,24 +34,19 @@ const SectionDescription = styled.div`
 `;
 const PricingColumn = styled.div`
   background: white;
+  height: 580px;
+  margin-top: 30px;
   border-radius: 1rem;
-  position: relative;
-  padding-bottom: 15px;
+
   @media (max-width: 991.9px) {
     margin-bottom: 30px;
-
   }
 `;
 const PricingColumnCenter = styled.div`
-  border: 1px solid #394171;
   background: #16192c;
+  height: 640px;
   border-radius: 1rem;
-  position: relative;
-
-  @media (max-width: 991.1px) {
-    margin-bottom: 30px;
-    padding-bottom: 35px;
-  }
+  border: 1px solid #3b4376;
 `;
 const PricingCard = styled.div`
   width: auto;
@@ -67,16 +63,14 @@ const PricingTitles = styled.div`
 `;
 const PricingTitlesCenter = styled.div`
   font-size: 18pt;
-  color: #5e6aba;
+  color: #6b78cb;
 `;
 const PricingPopular = styled.button`
-  position: absolute;
   width: fit-content;
   padding: 5px 15px 5px 15px;
   border-radius: 25rem;
   color: white;
   border: 0 solid green;
-  right: 20px;
   background: #5d9310;
 
   &:hover {
@@ -106,13 +100,11 @@ const PricingCoverage = styled.div`
   font-size: 15px;
   color: #4f4f4f;
   min-height: 72px;
-  text-transform: capitalize;
 `;
 const PricingCoverageCenter = styled.div`
-  text-transform: capitalize;
   font-size: 15px;
   color: #e8e8e8;
-  min-height: 72px;
+  min-height: 68px;
 `;
 const PricingHr = styled.hr`
   color: lightgray;
@@ -121,52 +113,51 @@ const Check = styled.img`
   width: 18px;
   height: 18px;
   margin-right: 15px;
+  margin-top: 2px;
 `;
 const PricingFeatures = styled.div`
   font-size: 15px;
   color: black;
   margin-bottom: 15px;
-  text-transform: capitalize;
   display: flex;
   @media screen and (min-width: 500px), (max-width: 768px) {
   }
 `;
+
 const PricingFeaturesCenter = styled.div`
-  text-transform: capitalize;
   font-size: 15px;
   color: white;
   margin-bottom: 15px;
   display: flex;
 `;
 
-// const PricingButton = styled.button`
-//   width: 80%;
-//   height: 46px;
-//   border-radius: 7px;
-//   border: 0;
-//   background: #16192c;
-//   color: white;
-//   font-size: 14pt;
-//   transition: 0.2s;
-//   &:hover {
-//     background: #373f6c;
-//   }
-// `;
-// const PricingButtonCenter = styled.button`
-//   width: 80%;
-//   height: 46px;
-//   border-radius: 7px;
-//   background: #5e6aba;
-//   color: black;
-//   border: 0;
-//   font-size: 14pt;
-//   position: relative;
-//   top: 284px;
-//   transition: 0.2s;
-//   &:hover {
-//     background: #3f4888;
-//   }
-// `;
+const PricingButton = styled.button`
+  width: 80%;
+  height: 46px;
+  border-radius: 7px;
+  border: 0;
+  background: #16192c;
+  color: white;
+  font-size: 14pt;
+  transition: 0.2s;
+  &:hover {
+    background: #373f6c;
+  }
+`;
+const PricingButtonCenter = styled.button`
+  width: 80%;
+  height: 44px;
+  border-radius: 7px;
+  background: #5e6aba;
+  color: black;
+  border: 0;
+  font-size: 14pt;
+  margin-top: 45px;
+  transition: 0.2s;
+  &:hover {
+    background: #3f4888;
+  }
+`;
 const ArrowStyle = styled.i`
   width: 18px;
   height: 18px;
@@ -195,29 +186,14 @@ const ListStyle2 = styled.div`
   margin-bottom: 10px;
   color: #5e6aba;
 `;
-const Note = styled.div`
-  text-align: center;
-  font-size: 17px;
-  color: #6F6F6F;
-  padding-bottom: 10px;
-  padding-top: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-
-  @media (max-width: 991.1px) {
-    margin-top: 35px;
-  }
-
-`;
 const Pricing = () => {
+  const { tawkMessenger } = React.useContext(TawkContext);
   return (
     <>
       <PackageTitle id="Packages" className="text-center text-uppercase">
         packages
       </PackageTitle>
-      <SectionHeading>OUR CERAMIC COATING PACKAGES</SectionHeading>
+      <SectionHeading>OUR PACKAGES</SectionHeading>
       <SectionDescription>
         Enhance your vehicle's shine and protection with our premium car
         detailing packages, tailored to restore and maintain its pristine
@@ -228,51 +204,64 @@ const Pricing = () => {
           <PricingColumn className="col-lg-4">
             <PricingCard>
               <div className="row">
-                <PricingTitles className="col">Standard</PricingTitles>
+                <PricingTitles className="col">Basic</PricingTitles>
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $499 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $55 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">
                 <PricingCoverage className="col">
-                  Ceramic Coating Without Paint Correction
+                  Ideal for a basic detail of your vehicle.
                 </PricingCoverage>
               </div>
               <hr />
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} alt="Checkmark" />
+                  <Check src={Checkmark} />
+                  Pre-Wash
+                </PricingFeatures>
+              </div>
+              <div className="row">
+                <PricingFeatures className="col ">
+                  <Check src={Checkmark} />
                   Exterior hand wash
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} alt="Checkmark"/>
-                  Exterior hand dry
+                  <Check src={Checkmark} />
+                  Interior Vacuum
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} alt="Checkmark"/>
-                  Clay bar treatment
+                  <Check src={Checkmark} />
+                  Interior wipe down
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} alt="Checkmark"/>
-                  Paint decontamination
+                  <Check src={Checkmark} />
+                  +$25 for SUV/TRUCK
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                 </PricingFeatures>
               </div>
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check src={Checkmark} alt="Checkmark"/>
-                  Ceramic coating (5 years)
-                </PricingFeatures>
+              <div className="text-center mt-2">
+                <PricingButton
+                  onClick={() => {
+                    tawkMessenger.toggle();
+                  }}
+                  className="col"
+                >
+                  Book Now
+                </PricingButton>
               </div>
             </PricingCard>
-            <Note>$599 for 7 seater</Note>
           </PricingColumn>
 
           <PricingColumnCenter className="col-lg-4">
@@ -287,35 +276,62 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCostCenter className="col">
-                  $799 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $125 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCostCenter>
               </div>
               <div className="row">
                 <PricingCoverageCenter className="col">
-                  Ceramic Coating With Paint Correction.
+                  Ideal for a thorough interior detailing experience.
                 </PricingCoverageCenter>
               </div>
               <PricingHr />
               <div className="row">
                 <ListStyle className="col">
                   <ArrowStyle className="bi bi-arrow-90deg-down" />
-                  Standard package, plus
+                  Basic package, plus
                 </ListStyle>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                  <Check alt="Checkmark" src={Checkmark} />2 stage paint correction - compound
-                  and polish
+                  <Check src={Checkmark} />
+                  Seats Shampoo
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Ceramic coating (5 years)
+                  <Check src={Checkmark} />
+                  Leather Conditioner
                 </PricingFeaturesCenter>
               </div>
+              <div className="row">
+                <PricingFeaturesCenter className="col">
+                  <Check src={Checkmark} />
+                  Interior Steam
+                </PricingFeaturesCenter>
+              </div>
+              <div className="row">
+                <PricingFeaturesCenter className="col">
+                  <Check src={Checkmark} />
+                  Interior Detail
+                </PricingFeaturesCenter>
+              </div>
+              <div className="row">
+                <PricingFeaturesCenter className="col">
+                  <Check src={Checkmark} />
+                  + $40 for SUV/TRUCK
+                </PricingFeaturesCenter>
+              </div>
+              <div className="text-center">
+                <PricingButtonCenter
+                  onClick={() => {
+                    tawkMessenger.toggle();
+                  }}
+                  className="col"
+                >
+                  Book Now
+                </PricingButtonCenter>
+              </div>
             </PricingCardCenter>
-            <Note>$899 for 7 seater</Note>
           </PricingColumnCenter>
 
           <PricingColumn className="col-lg-4">
@@ -325,79 +341,68 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $899 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $160 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">
                 <PricingCoverage className="col">
-                  Ceramic Coating With Paint Correction And Complete Interior
-                  Detail.
+                  Ideal for protection for your vehicle.
                 </PricingCoverage>
               </div>
               <hr />
               <div className="row">
                 <ListStyle2 className="col">
-                  <ArrowStyle2  className="bi bi-arrow-90deg-down" />
+                  <ArrowStyle2 className="bi bi-arrow-90deg-down" />
                   Platinum package, plus
                 </ListStyle2>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Complete interior deep clean - degrease, steam clean
+                  <Check src={Checkmark} />Deep interior clean
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Interior protectant dressing
+                  <Check src={Checkmark} />
+                  Rubber mats protection & shine
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Carpet shampoo
+                  <Check src={Checkmark} />
+                  Plastic restoration & interior shine
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Cloth seat shampoo/ leather
-                </PricingFeatures>
-              </div>{" "}
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  seats condition
-                </PricingFeatures>
-              </div>{" "}
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Headliner shampoo
-                </PricingFeatures>
-              </div>{" "}
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  All glass surface clean (inside)
-                </PricingFeatures>
-              </div>{" "}
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Deodrize
-                </PricingFeatures>
-              </div>{" "}
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check alt="Checkmark" src={Checkmark} />
-                  Door jambs clean
+                  <Check src={Checkmark} />
+                  Interior carpets & floor mats shampoo
                 </PricingFeatures>
               </div>
-              <br />
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} />
+                  Tire shine & Air freshner
+                </PricingFeatures>
+              </div>
+              <div className="row">
+                <PricingFeatures className="col">
+                  <Check src={Checkmark} />
+                  + $40 for SUV/TRUCK
+                </PricingFeatures>
+              </div>
+
+              <div className="text-center">
+                <PricingButton
+                  onClick={() => {
+                    tawkMessenger.toggle();
+                  }}
+                  className="col"
+                >
+                  Book Now
+                </PricingButton>
+              </div>
             </PricingCard>
-            <Note>$999 for 7 seater</Note>
           </PricingColumn>
         </div>
       </div>

@@ -13,7 +13,7 @@ const Slogan = styled.div`
   }
   @media screen and (max-width: 521px) {
     font-size: 13pt;
-    font-weight: 500;
+    font-weight: 400;
   }
 `;
 const Overlay = styled.div`
@@ -41,8 +41,10 @@ const SloganPortfolio = () => {
     <>
       <div className="container text-center">
         <Overlay className="shadow">
-          <Slogan>125 9704 39 Ave NW, Edmonton, AB T6E 6M7 <br/>Call: 780 716 3338</Slogan>
-          
+          <Slogan>
+            London, Ontario, Canada <br />
+            <div style={{fontSize:"15px", fontWeight:"500"}}>**Pick Up/Delivery or Drop Off/Pick up**</div>
+          </Slogan>
         </Overlay>
       </div>
     </>
@@ -76,29 +78,27 @@ const Masthead = styled.div`
     height: 35vh;
   }
 `;
-const Headliner = styled.div`
-  font-size: 25px;
-  color: white;
-  font-style: italic;
-  text-align: center;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-100%, -50%);
-  position: absolute;
+// const Headliner = styled.div`
+//   font-size: 25px;
+//   color: white;
+//   font-style: italic;
+//   text-align: center;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-100%, -50%);
+//   position: absolute;
 
-   @media (max-width: 730px) {
-    font-size: 16px;
-  }
-    
-  
-`
+//   @media (max-width: 730px) {
+//     font-size: 16px;
+//   }
+// `;
 
 const LandingSection = () => {
   return (
     <>
       <Masthead>
         <div className="container">
-          <Headliner>"Supreme Shine Detailing: <br/> Where Cleanliness Meets Perfection"</Headliner>
+          {/* <Headliner>"Supreme Shine Detailing: <br/> Where Cleanliness Meets Perfection"</Headliner> */}
           <SloganPortfolio />
         </div>
       </Masthead>

@@ -14,7 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { TawkContext } from "../providers";
-import Crown from '../images/Logo.jpg'
+// import Crown from '../images/Logo.jpg'
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
   transition: 0.2s;
@@ -41,10 +41,10 @@ const LinksStyle = styled.a`
 const BookButtonStyle = styled(Button)`
   color: black;
   margin-left: 16px;
-  background: #e0bd01;
+  background: #55A4C3;
   white-space: nowrap;
   &:hover {
-    background: #c5a703;
+    background: #4787A0;
   }
 `;
 
@@ -62,7 +62,7 @@ const AppNavBar = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2}}>
-        King's Autozone
+      Lonaxa Auto Spa
       </Typography>
       <Divider />
       <List>
@@ -77,18 +77,13 @@ const AppNavBar = (props) => {
           </ListItemButtonStyle>
         </ListItem>
         <ListItem>
-          <ListItemButtonStyle href="#CPackages" sx={{ textAlign: "center" }}>
-            <ListItemText primary="Ceramic Coating" />
-          </ListItemButtonStyle>
-        </ListItem>
-        <ListItem>
           <ListItemButtonStyle href="#Services" sx={{ textAlign: "center" }}>
             <ListItemText primary="Services" />
           </ListItemButtonStyle>
         </ListItem>
         <ListItem>
           <ListItemButtonStyle
-            href="tel:+17807163338"
+            href="tel:+12269985884"
             sx={{ textAlign: "center" }}
           >
             <ListItemText primary="Call Us" />
@@ -97,11 +92,6 @@ const AppNavBar = (props) => {
         <ListItem>
           <ListItemButtonStyle href="#Gallery" sx={{ textAlign: "center" }}>
             <ListItemText primary="Gallery" />
-          </ListItemButtonStyle>
-        </ListItem>
-        <ListItem>
-          <ListItemButtonStyle href="/terms" sx={{ textAlign: "center" }}>
-            <ListItemText primary="Terms & Conditions" />
           </ListItemButtonStyle>
         </ListItem>
       </List>
@@ -124,14 +114,14 @@ const AppNavBar = (props) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div">
-            <div href="/" style={{ color: "black", textDecoration: "none", display:"flex" }}>
-              
-              <img
+            <div href="/" style={{ color: "white", textDecoration: "none", display:"flex" }}>
+            Lonaxa Auto Spa
+              {/* <img
                 src={Crown}
                 width={180}
                 height={100}
                 alt="crown logo"
-              />
+              /> */}
              
             </div>
           </Typography>
@@ -141,10 +131,9 @@ const AppNavBar = (props) => {
             style={{ marginLeft: "auto"}}
           >
             <LinksStyle href="#About">About</LinksStyle>
-            <LinksStyle href="#CPackages">Ceramic Coating </LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
             <LinksStyle href="#Services">Services</LinksStyle>
-            <LinksStyle href="tel:+17807163338">Call us</LinksStyle>
+            <LinksStyle href="tel:+12269985884">Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
             <BookButtonStyle
               onClick={() => {

@@ -15,7 +15,7 @@ const Title = styled.div`
     height: 2px;
     bottom: 0px;
     left: calc(50% - 25px);
-    background: #e0bd01;
+    background: black;
   }
 `;
 const Services = () => {
@@ -32,31 +32,31 @@ const Services = () => {
         </div>
         <div className="row">
           <ServicesArray
-            title={["Interior Detailing"]}
+            title={["Auto Detailing"]}
             text={[
-              "Interior detailing involves thorough cleaning and restoring the interior surfaces of a vehicle, including the seats, carpets, dashboard, and other components.",
+              "Auto detailing involves meticulously cleaning, polishing, and restoring the interior and exterior of vehicles to enhance their appearance and maintain their condition.",
             ]}
             price={["$20"]}
           />
           <ServicesArray
-            title={["Exterior Detailing"]}
+            title={["Scratch Removal"]}
             text={[
-              "Exterior detailing is thoroughly washing, polishing, and protecting a vehicle's exterior surfaces in order to maintain and improve its appearance.",
+              "Scratch Removal offers professional and effective solutions to restore surfaces by eliminating scratches and blemishes, renewing them to their original pristine condition.",
             ]}
             price={["$99"]}
           />
 
           <ServicesArray
-            title={["Ceramic Coating"]}
+            title={["Paint Restoration"]}
             text={[
-              "Ceramic coating is a durable, protective layer applied to surfaces like vehicles or ceramics to enhance gloss and protect against contaminants.",
+              "Faded paintwork on automobiles is restored to a flawless and glossy appearance using thorough cleaning and polishing processes.",
             ]}
             price={["$50"]}
           />
           <ServicesArray
-            title={["Power Polish"]}
+            title={["Exterior Polish"]}
             text={[
-              "Polishing can remove or disguise scratches, water spots, swirls, stone chips, and other minor damages to your car's paint work.",
+              "Exterior Polish is a high-quality automotive detailing service that restores and enhances the shine and finish of your vehicle's exterior surfaces.",
             ]}
             price={["$$$"]}
           />
@@ -77,7 +77,9 @@ const ServicesArray = ({ text, title, price }) => {
             return (
               <React.Fragment key={i}>
                 <div className="col-md-6 col-lg-3 p-3">
-                  <div className="icon"><i className="bi bi-cart-plus-fill"/></div>
+                  <div className="icon">
+                    <i className="bi bi-cart-plus-fill" />
+                  </div>
                   <Title className="mb-3 pb-2">{title}</Title>
                   <div className="">{v}</div>
                 </div>

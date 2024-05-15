@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { TawkContext } from "../providers";
 const FooterContainer = styled.footer`
   background: #24262b;
   text-align: center;
@@ -37,6 +38,7 @@ const MyLink = styled.a`
   }
 `;
 const Footer = () => {
+  const { tawkMessenger } = React.useContext(TawkContext);
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -45,15 +47,7 @@ const Footer = () => {
       <FooterContainer>
         <div>
           <a
-            href="https://www.facebook.com/profile.php?id=100070850827354"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="facebook"
-          >
-            <Icon className="bi bi-facebook" />
-          </a>
-          <a
-            href="https://www.instagram.com/kingsautozone_yeg/"
+            href="https://www.instagram.com/lonaxa.auto.spa/"
             target="_blank"
             rel="noreferrer"
             aria-label="instagram"
@@ -61,7 +55,7 @@ const Footer = () => {
             <Icon className="bi bi-instagram" />
           </a>
           <a
-            href="https://www.google.com/search?q=kings+autozone&sca_esv=4a15b0de3d8e6aa3&rlz=1C1CHBF_enCA931CA931&sxsrf=ADLYWIL9htqEBbmwf4wAYyOG7RwrGSfHzQ%3A1715151286619&ei=tiE7ZqW9JbSjptQPgtSZgAo&ved=0ahUKEwil8LK5vP2FAxW0kYkEHQJqBqAQ4dUDCBA&uact=5&oq=kingsautozone&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWtpbmdzYXV0b3pvbmUyDhAuGIAEGLADGMcBGK8BMgkQABiwAxgIGB4yCRAAGLADGAgYHjIJEAAYsAMYCBgeMgkQABiwAxgIGB4yCRAAGLADGAgYHjIJEAAYsAMYCBgeMgkQABiwAxgIGB4yCRAAGLADGAgYHjIJEAAYsAMYCBgeSMMEUABYAHAAeACQAQCYAUygAUyqAQExuAEDyAEAmAIBoAJPmAMA4gMFEgExIECIBgGQBgqSBwExoAfkCA&sclient=gws-wiz-serp#lrd=0x53a01f28a8a42e49:0xd5f3529b268fdf97,1,,,,"
+            href="https://www.google.com/search?q=lonaxa+autospa+london+ontario&sca_esv=697ef796fdf142b1&rlz=1C1CHBF_enCA931CA931&biw=1195&bih=1011&sxsrf=ADLYWIIgB-3Am3fD4BnES2NbJ9rLwQFY7g%3A1715808229890&ei=5SdFZpD_NeGB0PEPlbSlmA0&oq=lonaxa+autospa+london&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWxvbmF4YSBhdXRvc3BhIGxvbmRvbioCCAAyBRAhGKABMgUQIRigAUj2EFBlWOgLcAF4AZABAJgBdaABkwWqAQM1LjK4AQPIAQD4AQGYAgigAqIFwgIKEAAYsAMY1gQYR8ICBxAhGKABGAqYAwCIBgGQBgiSBwM2LjKgB78X&sclient=gws-wiz-serp#lrd=0x6d594109faf4733:0x1172567e0a1f68c9,1,,,,"
             target="_blank"
             rel="noreferrer"
             aria-label="google"
@@ -79,7 +73,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="tel:+17807163338"
+            href="tel:+12269985884"
             aria-label="phone"
           >
             <Icon className="bi bi-telephone" />
@@ -95,7 +89,13 @@ const Footer = () => {
         </div>
         <div className="p-3 d-flex flex-column flex-md-row justify-content-center align-items-center">
           <Footerlink href="#About">About</Footerlink>
-          <Footerlink href="/terms">Terms & Conditions</Footerlink>
+          <Footerlink
+            onClick={() => {
+              tawkMessenger.toggle();
+            }}
+          >
+            Book Now
+          </Footerlink>
           <Footerlink href="#Packages">Packages</Footerlink>
           <Footerlink href="#Services">Services</Footerlink>
           <Footerlink onClick={scrollTop}>Back To Top</Footerlink>
