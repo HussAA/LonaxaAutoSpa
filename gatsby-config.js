@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `King's Autozone`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Lonaxa Auto Spa`,
+    siteUrl: `https://lonaxaautospa.netlify.app/`,
   },
   plugins: [
     "gatsby-plugin-react-helmet",
