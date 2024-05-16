@@ -10,7 +10,7 @@ import Pricing from "../components/package";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 const PricingSection = styled.section`
-  background: #1a1a1a;
+  background: #101010;
   padding: 20px 10px 70px 10px;
   @media (max-width: 991px) {
     padding-left: 30px;
@@ -37,14 +37,6 @@ const IndexPage = () => {
         <section id="About" style={{ marginTop: "80px", paddingTop: "80px" }}>
           <AboutUs />
         </section>
-        {/* <section>
-          <div
-            id="Packages"
-            style={{ marginTop: "100px", paddingTop: "120px" }}
-          >
-            <Packages />
-          </div>
-        </section> */}
 
         <PricingSection id="Packages" style={{ marginTop: "100px", paddingTop: "120px" }}>
           <Pricing />

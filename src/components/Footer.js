@@ -31,10 +31,10 @@ const Footerlink = styled.a`
 
 const MyLink = styled.a`
   text-decoration: none;
-  color: gold;
+  color: #62cbe3;
   transition: 0.3s;
   :hover {
-    color: yellow;
+    color: #53A9BD;
   }
 `;
 const Footer = () => {

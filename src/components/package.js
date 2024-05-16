@@ -34,7 +34,7 @@ const SectionDescription = styled.div`
 `;
 const PricingColumn = styled.div`
   background: white;
-  height: 580px;
+  height: 600px;
   margin-top: 30px;
   border-radius: 1rem;
 
@@ -43,10 +43,10 @@ const PricingColumn = styled.div`
   }
 `;
 const PricingColumnCenter = styled.div`
-  background: #16192c;
-  height: 640px;
+  background: #62cbe3;
+  height: 660px;
   border-radius: 1rem;
-  border: 1px solid #3b4376;
+  border: 1px solid #53A9BD;
 `;
 const PricingCard = styled.div`
   width: auto;
@@ -55,15 +55,16 @@ const PricingCard = styled.div`
 const PricingCardCenter = styled.div`
   width: auto;
   padding: 13px;
+  
 `;
 
 const PricingTitles = styled.div`
-  font-size: 18pt;
+  font-size: 22pt;
   color: #16192c;
 `;
 const PricingTitlesCenter = styled.div`
-  font-size: 18pt;
-  color: #6b78cb;
+  font-size: 22pt;
+  color: black;
 `;
 const PricingPopular = styled.button`
   width: fit-content;
@@ -71,7 +72,7 @@ const PricingPopular = styled.button`
   border-radius: 25rem;
   color: white;
   border: 0 solid green;
-  background: #5d9310;
+  background: #16192c;
 
   &:hover {
     cursor: default;
@@ -86,7 +87,7 @@ const PricingCost = styled.div`
 `;
 const PricingCostCenter = styled.div`
   font-size: 28pt;
-  color: white;
+  color: black;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -103,13 +104,17 @@ const PricingCoverage = styled.div`
 `;
 const PricingCoverageCenter = styled.div`
   font-size: 15px;
-  color: #e8e8e8;
+  color: black;
   min-height: 68px;
 `;
-const PricingHr = styled.hr`
-  color: lightgray;
-`;
+
 const Check = styled.img`
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  margin-top: 2px;
+`;
+const CheckCenter = styled.i`
   width: 18px;
   height: 18px;
   margin-right: 15px;
@@ -126,7 +131,7 @@ const PricingFeatures = styled.div`
 
 const PricingFeaturesCenter = styled.div`
   font-size: 15px;
-  color: white;
+  color: black;
   margin-bottom: 15px;
   display: flex;
 `;
@@ -148,14 +153,14 @@ const PricingButtonCenter = styled.button`
   width: 80%;
   height: 44px;
   border-radius: 7px;
-  background: #5e6aba;
+  background: #1F7488;
   color: black;
   border: 0;
   font-size: 14pt;
   margin-top: 45px;
   transition: 0.2s;
   &:hover {
-    background: #3f4888;
+    background: #298FA8;
   }
 `;
 const ArrowStyle = styled.i`
@@ -163,28 +168,28 @@ const ArrowStyle = styled.i`
   height: 18px;
   margin-left: 3px;
   margin-right: 15px;
-  color: #02bc7d;
+  color: purple;
 `;
 
 const ListStyle = styled.div`
   font-size: 15px;
   color: white;
   margin-bottom: 10px;
-  color: #02bc7d;
+  color: purple;
 `;
 const ArrowStyle2 = styled.i`
   width: 18px;
   height: 18px;
   margin-left: 3px;
   margin-right: 15px;
-  color: #5e6aba;
+  color: purple;
 `;
 
 const ListStyle2 = styled.div`
   font-size: 15px;
   color: white;
   margin-bottom: 10px;
-  color: #5e6aba;
+  color: purple;
 `;
 const Pricing = () => {
   const { tawkMessenger } = React.useContext(TawkContext);
@@ -204,7 +209,7 @@ const Pricing = () => {
           <PricingColumn className="col-lg-4">
             <PricingCard>
               <div className="row">
-                <PricingTitles className="col">Basic</PricingTitles>
+                <PricingTitles className="col">1</PricingTitles>
               </div>
               <div className="row">
                 <PricingCost className="col">
@@ -249,6 +254,7 @@ const Pricing = () => {
                   <br />
                   <br />
                   <br />
+                  <br />
                 </PricingFeatures>
               </div>
               <div className="text-center mt-2">
@@ -271,7 +277,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingTitlesCenter className="col">
-                  Platinum
+                  2
                 </PricingTitlesCenter>
               </div>
               <div className="row">
@@ -284,41 +290,44 @@ const Pricing = () => {
                   Ideal for a thorough interior detailing experience.
                 </PricingCoverageCenter>
               </div>
-              <PricingHr />
+              <hr />
               <div className="row">
                 <ListStyle className="col">
                   <ArrowStyle className="bi bi-arrow-90deg-down" />
-                  Basic package, plus
+                  Package 1, plus
                 </ListStyle>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                  <Check src={Checkmark} />
+                  <CheckCenter className="bi bi-check2" />
                   Seats Shampoo
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                  <Check src={Checkmark} />
+                <CheckCenter className="bi bi-check2" />
                   Leather Conditioner
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                  <Check src={Checkmark} />
+                <CheckCenter className="bi bi-check2" />
                   Interior Steam
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                  <Check src={Checkmark} />
+                <CheckCenter className="bi bi-check2" />
                   Interior Detail
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                  <Check src={Checkmark} />
+                <CheckCenter className="bi bi-check2" />
                   + $40 for SUV/TRUCK
+                  <br />
+                  <br />
+                  <br />
                 </PricingFeaturesCenter>
               </div>
               <div className="text-center">
@@ -337,7 +346,7 @@ const Pricing = () => {
           <PricingColumn className="col-lg-4">
             <PricingCard>
               <div className="row">
-                <PricingTitles className="col">Premium</PricingTitles>
+                <PricingTitles className="col">3</PricingTitles>
               </div>
               <div className="row">
                 <PricingCost className="col">
@@ -353,7 +362,7 @@ const Pricing = () => {
               <div className="row">
                 <ListStyle2 className="col">
                   <ArrowStyle2 className="bi bi-arrow-90deg-down" />
-                  Platinum package, plus
+                  Package 2, plus
                 </ListStyle2>
               </div>
               <div className="row">

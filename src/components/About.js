@@ -27,7 +27,7 @@ const SecondTitle = styled.span`
   font-weight: bold;
 `;
 const LeftText = styled.div`
-  background: #202020;
+  background: #101010;
   min-height: 150px;
   padding: 20px;
   color: lightgray;

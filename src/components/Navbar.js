@@ -14,7 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { TawkContext } from "../providers";
-// import Crown from '../images/Logo.jpg'
+import Logo from '../images/Logo.jpg'
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
   transition: 0.2s;
@@ -25,7 +25,7 @@ const ListItemButtonStyle = styled(ListItemButton)`
 
 const AppBarStyle = styled(AppBar)`
   height: 100px;
-  background: #222021;
+  background: #101010;
   position: fixed;
 `;
 const LinksStyle = styled.a`
@@ -41,7 +41,7 @@ const LinksStyle = styled.a`
 const BookButtonStyle = styled(Button)`
   color: black;
   margin-left: 16px;
-  background: #55A4C3;
+  background: #62cbe3;
   white-space: nowrap;
   &:hover {
     background: #4787A0;
@@ -115,13 +115,13 @@ const AppNavBar = (props) => {
           </IconButton>
           <Typography variant="h6" component="div">
             <div href="/" style={{ color: "white", textDecoration: "none", display:"flex" }}>
-            Lonaxa Auto Spa
-              {/* <img
-                src={Crown}
+            
+              <img
+                src={Logo}
                 width={180}
                 height={100}
                 alt="crown logo"
-              /> */}
+              />
              
             </div>
           </Typography>

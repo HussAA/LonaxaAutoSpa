@@ -15,7 +15,7 @@ const Title = styled.div`
     height: 2px;
     bottom: 0px;
     left: calc(50% - 25px);
-    background: black;
+    background: #101010;
   }
 `;
 const Services = () => {
@@ -47,14 +47,28 @@ const Services = () => {
           />
 
           <ServicesArray
-            title={["Paint Restoration"]}
+            title={["Headlight Restoration"]}
             text={[
-              "Faded paintwork on automobiles is restored to a flawless and glossy appearance using thorough cleaning and polishing processes.",
+              " Headlight restoration involves the process of renewing and enhancing the clarity and effectiveness of cloudy or faded vehicle headlights.",
             ]}
             price={["$50"]}
           />
           <ServicesArray
             title={["Exterior Polish"]}
+            text={[
+              "Exterior Polish is a high-quality automotive detailing service that restores and enhances the shine and finish of your vehicle's exterior surfaces.",
+            ]}
+            price={["$$$"]}
+          />
+          <ServicesArray
+            title={["Engine Bay Shampoo"]}
+            text={[
+              "Exterior Polish is a high-quality automotive detailing service that restores and enhances the shine and finish of your vehicle's exterior surfaces.",
+            ]}
+            price={["$$$"]}
+          />
+          <ServicesArray
+            title={["Engine Bay Shine"]}
             text={[
               "Exterior Polish is a high-quality automotive detailing service that restores and enhances the shine and finish of your vehicle's exterior surfaces.",
             ]}
@@ -76,7 +90,7 @@ const ServicesArray = ({ text, title, price }) => {
           {text.map((v, i) => {
             return (
               <React.Fragment key={i}>
-                <div className="col-md-6 col-lg-3 p-3">
+                <div className="col-md-6 col-lg-4 p-3">
                   <div className="icon">
                     <i className="bi bi-cart-plus-fill" />
                   </div>
