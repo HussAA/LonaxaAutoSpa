@@ -4617,39 +4617,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autocare@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "autocare@workspace:."
-  dependencies:
-    "@emotion/react": "npm:^11.11.1"
-    "@emotion/styled": "npm:^11.11.0"
-    "@mui/icons-material": "npm:^5.14.16"
-    "@mui/material": "npm:^5.14.17"
-    "@mui/styled-engine-sc": "npm:^6.0.0-alpha.5"
-    "@tawk.to/tawk-messenger-react": "npm:^2.0.2"
-    aos: "npm:^2.3.4"
-    babel-plugin-styled-components: "npm:^2.1.4"
-    bootstrap: "npm:^5.3.2"
-    bootstrap-icons: "npm:^1.11.2"
-    gatsby: "npm:^5.12.4"
-    gatsby-plugin-image: "npm:^3.13.1"
-    gatsby-plugin-manifest: "npm:^5.13.1"
-    gatsby-plugin-react-helmet: "npm:^6.13.1"
-    gatsby-plugin-sharp: "npm:^5.13.1"
-    gatsby-plugin-styled-components: "npm:^6.12.0"
-    gatsby-source-filesystem: "npm:^5.12.1"
-    gatsby-transformer-sharp: "npm:^5.12.3"
-    lodash: "npm:^4.17.21"
-    react: "npm:^18.3.1"
-    react-compare-image: "npm:^3.4.0"
-    react-dom: "npm:^18.3.1"
-    react-helmet: "npm:^6.1.0"
-    react-icons: "npm:^4.12.0"
-    reactstrap: "npm:^9.2.2"
-    styled-components: "npm:^6.1.1"
-  languageName: unknown
-  linkType: soft
-
 "autoprefixer@npm:^10.4.14":
   version: 10.4.16
   resolution: "autoprefixer@npm:10.4.16"
@@ -9065,6 +9032,39 @@ __metadata:
   checksum: 10c0/695edb3edfcfe9c8b52a76926cd31b36978782062c0ed9b1192b36bebc75c4c87c82e178dfcb0ed0fc27ca59d434198aac0bd0be18f5781ded775604db22304a
   languageName: node
   linkType: hard
+
+"hussainalnakhli@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "hussainalnakhli@workspace:."
+  dependencies:
+    "@emotion/react": "npm:^11.11.1"
+    "@emotion/styled": "npm:^11.11.0"
+    "@mui/icons-material": "npm:^5.14.16"
+    "@mui/material": "npm:^5.14.17"
+    "@mui/styled-engine-sc": "npm:^6.0.0-alpha.5"
+    "@tawk.to/tawk-messenger-react": "npm:^2.0.2"
+    aos: "npm:^2.3.4"
+    babel-plugin-styled-components: "npm:^2.1.4"
+    bootstrap: "npm:^5.3.2"
+    bootstrap-icons: "npm:^1.11.2"
+    gatsby: "npm:^5.12.4"
+    gatsby-plugin-image: "npm:^3.13.1"
+    gatsby-plugin-manifest: "npm:^5.13.1"
+    gatsby-plugin-react-helmet: "npm:^6.13.1"
+    gatsby-plugin-sharp: "npm:^5.13.1"
+    gatsby-plugin-styled-components: "npm:^6.12.0"
+    gatsby-source-filesystem: "npm:^5.12.1"
+    gatsby-transformer-sharp: "npm:^5.12.3"
+    lodash: "npm:^4.17.21"
+    react: "npm:^18.3.1"
+    react-compare-image: "npm:^3.4.0"
+    react-dom: "npm:^18.3.1"
+    react-helmet: "npm:^6.1.0"
+    react-icons: "npm:^4.12.0"
+    reactstrap: "npm:^9.2.2"
+    styled-components: "npm:^6.1.1"
+  languageName: unknown
+  linkType: soft
 
 "iconv-lite@npm:0.4.24, iconv-lite@npm:^0.4.24, iconv-lite@npm:^0.4.4":
   version: 0.4.24

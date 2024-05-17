@@ -4,7 +4,7 @@ import Checkmark from "../images/checkmark.png";
 import { TawkContext } from "../providers";
 const PackageTitle = styled.div`
   font-size: 12pt;
-  color: white;
+  color: black;
 
   margin-bottom: 50px;
 
@@ -14,7 +14,7 @@ const PackageTitle = styled.div`
 `;
 const SectionHeading = styled.div`
   font-size: 35pt;
-  color: white;
+  color: black;
   text-align: center;
   font-family: sans-serif;
   @media screen and (max-width: 600px) {
@@ -25,7 +25,7 @@ const SectionDescription = styled.div`
   font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #979797;
+  color: black;
   margin-bottom: 40px;
   margin-left: 23px;
   margin-right: 23px;
@@ -43,10 +43,9 @@ const PricingColumn = styled.div`
   }
 `;
 const PricingColumnCenter = styled.div`
-  background: #62cbe3;
+  background: #252942;
   height: 660px;
   border-radius: 1rem;
-  border: 1px solid #53A9BD;
 `;
 const PricingCard = styled.div`
   width: auto;
@@ -64,7 +63,7 @@ const PricingTitles = styled.div`
 `;
 const PricingTitlesCenter = styled.div`
   font-size: 22pt;
-  color: black;
+  color: #5e6aba;
 `;
 const PricingPopular = styled.button`
   width: fit-content;
@@ -72,7 +71,7 @@ const PricingPopular = styled.button`
   border-radius: 25rem;
   color: white;
   border: 0 solid green;
-  background: #16192c;
+  background: darkgreen;
 
   &:hover {
     cursor: default;
@@ -87,7 +86,7 @@ const PricingCost = styled.div`
 `;
 const PricingCostCenter = styled.div`
   font-size: 28pt;
-  color: black;
+  color: white;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -104,10 +103,12 @@ const PricingCoverage = styled.div`
 `;
 const PricingCoverageCenter = styled.div`
   font-size: 15px;
-  color: black;
+  color: #e8e8e8;
   min-height: 68px;
 `;
-
+const PricingHr = styled.hr`
+  color: lightgray;
+`;
 const Check = styled.img`
   width: 18px;
   height: 18px;
@@ -131,7 +132,7 @@ const PricingFeatures = styled.div`
 
 const PricingFeaturesCenter = styled.div`
   font-size: 15px;
-  color: black;
+  color: white;
   margin-bottom: 15px;
   display: flex;
 `;
@@ -153,14 +154,14 @@ const PricingButtonCenter = styled.button`
   width: 80%;
   height: 44px;
   border-radius: 7px;
-  background: #1F7488;
+  background: #5e6aba;
   color: black;
   border: 0;
   font-size: 14pt;
   margin-top: 45px;
   transition: 0.2s;
   &:hover {
-    background: #298FA8;
+    background: #373f6c;
   }
 `;
 const ArrowStyle = styled.i`
@@ -168,14 +169,14 @@ const ArrowStyle = styled.i`
   height: 18px;
   margin-left: 3px;
   margin-right: 15px;
-  color: purple;
+  color: #02bc7d;
 `;
 
 const ListStyle = styled.div`
   font-size: 15px;
   color: white;
   margin-bottom: 10px;
-  color: purple;
+  color: #02bc7d;
 `;
 const ArrowStyle2 = styled.i`
   width: 18px;
@@ -282,7 +283,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCostCenter className="col">
-                  $125 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $125 <PricingCostSpan style={{color:"black"}}>/Starting</PricingCostSpan>
                 </PricingCostCenter>
               </div>
               <div className="row">
@@ -290,7 +291,7 @@ const Pricing = () => {
                   Ideal for a thorough interior detailing experience.
                 </PricingCoverageCenter>
               </div>
-              <hr />
+              <PricingHr />
               <div className="row">
                 <ListStyle className="col">
                   <ArrowStyle className="bi bi-arrow-90deg-down" />

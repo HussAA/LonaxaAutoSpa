@@ -17,6 +17,7 @@ App {
     animation: fadeIn 0.3s;
     transition: opacity 0.3s;
     opacity: 0.8;
+    color: #387684;
     transform: translate(-50%, -50%);
     transition: 0.3s;
  }

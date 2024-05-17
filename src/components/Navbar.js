@@ -41,7 +41,7 @@ const LinksStyle = styled.a`
 const BookButtonStyle = styled(Button)`
   color: black;
   margin-left: 16px;
-  background: #62cbe3;
+  background: #499caf;
   white-space: nowrap;
   &:hover {
     background: #4787A0;

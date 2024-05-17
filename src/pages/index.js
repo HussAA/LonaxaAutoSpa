@@ -10,7 +10,7 @@ import Pricing from "../components/package";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 const PricingSection = styled.section`
-  background: #101010;
+  background: #499caf;
   padding: 20px 10px 70px 10px;
   @media (max-width: 991px) {
     padding-left: 30px;

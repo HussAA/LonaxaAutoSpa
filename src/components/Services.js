@@ -15,7 +15,7 @@ const Title = styled.div`
     height: 2px;
     bottom: 0px;
     left: calc(50% - 25px);
-    background: #101010;
+    background: #499caf;
   }
 `;
 const Services = () => {
