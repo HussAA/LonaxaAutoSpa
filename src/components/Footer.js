@@ -55,7 +55,7 @@ const Footer = () => {
             <Icon className="bi bi-instagram" />
           </a>
           <a
-            href="https://www.google.com/search?q=lonaxa+autospa+london+ontario&sca_esv=697ef796fdf142b1&rlz=1C1CHBF_enCA931CA931&biw=1195&bih=1011&sxsrf=ADLYWIIgB-3Am3fD4BnES2NbJ9rLwQFY7g%3A1715808229890&ei=5SdFZpD_NeGB0PEPlbSlmA0&oq=lonaxa+autospa+london&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWxvbmF4YSBhdXRvc3BhIGxvbmRvbioCCAAyBRAhGKABMgUQIRigAUj2EFBlWOgLcAF4AZABAJgBdaABkwWqAQM1LjK4AQPIAQD4AQGYAgigAqIFwgIKEAAYsAMY1gQYR8ICBxAhGKABGAqYAwCIBgGQBgiSBwM2LjKgB78X&sclient=gws-wiz-serp#lrd=0x6d594109faf4733:0x1172567e0a1f68c9,1,,,,"
+            href="https://www.google.com/search?sca_esv=0eb7a465d1046084&hl=en&sxsrf=ADLYWIKPW_gSok7Ev08Xs7yhbjd8xCTMcA:1715926777298&q=lonaxa+auto+spa+london+ontario&spell=1&sa=X&ved=2ahUKEwis0JWwhZSGAxXjj4kEHYCuDBEQBSgAegQIDRAB&biw=1037&bih=1011&dpr=0.9#lrd=0x6d594109faf4733:0x1172567e0a1f68c9,1,,,,"
             target="_blank"
             rel="noreferrer"
             aria-label="google"
@@ -65,7 +65,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="mailto:Kingsautozone@gmail.com"
+            href="mailto:"
             aria-label="email"
           >
             <Icon className="bi bi-envelope-plus" />
@@ -81,7 +81,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.tiktok.com/@kingsautozone_yeg"
+            href="https://www.tiktok.com/"
             aria-label="tiktok"
           >
             <Icon className="bi bi-tiktok" />
