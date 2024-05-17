@@ -32,12 +32,12 @@ const SectionDescription = styled.div`
 `;
 class Gallery extends Component {
   render() {
-    const before = require("../images/before1.webp").default;
-    const after = require("../images/after1.webp").default;
+    const before = require("../images/before3.webp").default;
+    const after = require("../images/after3.webp").default;
     const before1 = require("../images/before2.webp").default;
     const after1 = require("../images/after2.webp").default;
-    const before2 = require("../images/before3.webp").default;
-    const after2 = require("../images/after3.webp").default;
+    const before2 = require("../images/before.webp").default;
+    const after2 = require("../images/after.webp").default;
 
     return (
       <>

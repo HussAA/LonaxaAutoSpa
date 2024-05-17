@@ -65,26 +65,10 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="mailto:"
-            aria-label="email"
-          >
-            <Icon className="bi bi-envelope-plus" />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
             href="tel:+12269985884"
             aria-label="phone"
           >
             <Icon className="bi bi-telephone" />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.tiktok.com/"
-            aria-label="tiktok"
-          >
-            <Icon className="bi bi-tiktok" />
           </a>
         </div>
         <div className="p-3 d-flex flex-column flex-md-row justify-content-center align-items-center">
