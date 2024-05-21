@@ -47,10 +47,16 @@
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .pricing-md-max{
         padding-left:15%;
         padding-right:15%;
+    }
+}
+@media screen and (max-width:450px) {
+    .pricing-md-max{
+        padding-left:10%;
+        padding-right:10%;
     }
 }
 @media screen and (min-width:992px) {

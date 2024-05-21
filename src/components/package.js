@@ -33,8 +33,9 @@ const SectionDescription = styled.div`
   padding-right: 50px;
 `;
 const PricingColumn = styled.div`
+  position: relative;
   background: white;
-  height: 600px;
+  min-height: 600px;
   margin-top: 30px;
   border-radius: 1rem;
 
@@ -43,6 +44,7 @@ const PricingColumn = styled.div`
   }
 `;
 const PricingColumnCenter = styled.div`
+  position: relative;
   background: #252942;
   height: 660px;
   border-radius: 1rem;
@@ -54,7 +56,6 @@ const PricingCard = styled.div`
 const PricingCardCenter = styled.div`
   width: auto;
   padding: 13px;
-  
 `;
 
 const PricingTitles = styled.div`
@@ -277,13 +278,14 @@ const Pricing = () => {
                 <PricingPopular className="col">Popular</PricingPopular>
               </div>
               <div className="row">
-                <PricingTitlesCenter className="col">
-                  2
-                </PricingTitlesCenter>
+                <PricingTitlesCenter className="col">2</PricingTitlesCenter>
               </div>
               <div className="row">
                 <PricingCostCenter className="col">
-                  $125 <PricingCostSpan style={{color:"black"}}>/Starting</PricingCostSpan>
+                  $125{" "}
+                  <PricingCostSpan style={{ color: "black" }}>
+                    /Starting
+                  </PricingCostSpan>
                 </PricingCostCenter>
               </div>
               <div className="row">
@@ -306,25 +308,25 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                <CheckCenter className="bi bi-check2" />
+                  <CheckCenter className="bi bi-check2" />
                   Leather Conditioner
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                <CheckCenter className="bi bi-check2" />
+                  <CheckCenter className="bi bi-check2" />
                   Interior Steam
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                <CheckCenter className="bi bi-check2" />
+                  <CheckCenter className="bi bi-check2" />
                   Interior Detail
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
                 <PricingFeaturesCenter className="col">
-                <CheckCenter className="bi bi-check2" />
+                  <CheckCenter className="bi bi-check2" />
                   + $40 for SUV/TRUCK
                   <br />
                   <br />
@@ -368,7 +370,8 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} />Deep interior clean
+                  <Check src={Checkmark} />
+                  Deep interior clean
                 </PricingFeatures>
               </div>
               <div className="row">
@@ -397,8 +400,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} />
-                  + $40 for SUV/TRUCK
+                  <Check src={Checkmark} />+ $40 for SUV/TRUCK
                 </PricingFeatures>
               </div>
 
